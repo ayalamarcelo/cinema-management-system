@@ -1,11 +1,11 @@
-## ⚙️equirements
+## Requirements
 
 - [x] JDK 17
 - [x] Apache Tomcat 9.0
 - [x] MySQL
 - [x] Maven
 
-## 🛠️nvironment Configuration
+## Environment Configuration
 
 **Database**
 
@@ -51,7 +51,7 @@ Verify that the root path (index.jsp) is working properly.
 }
 ```
 
-### 📌 Final Notes
+### Final Notes
 
 - Make sure your MySQL and Tomcat services are up and properly configured.
 - Check and update database credentials in DatabaseConnection.java if needed.
