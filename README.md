@@ -1,58 +1,19 @@
-<h1 align="center">🎬 Movie Hub</h1>
-
-<p>This project is a backend application developed in Java using Servlet, Apache Tomcat and MySQL. The purpose of the project is to provide an API for managing movies, including CRUD operations with Postman.</p>
-
-
-## 📁 Project Structure
-```
-backend/
-├── .idea/
-├── cmarttomcat/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── org/
-│       │       ├── application/
-│       │       │   └── services/
-│       │       │       ├── adapters/
-│       │       │       │   └── IRepository.java
-│       │       │       └── services/
-│       │       │           └── IRepository.java
-│       │       ├── domain/
-│       │       │   └── models/
-│       │       │       └── MovieService.java
-│       │       └── infrastructure/
-│       │           └── repository/
-│       │               ├── controllers/
-│       │               │   └── MovieController.java
-│       │               └── database/
-│       │                   ├── DatabaseConnection.java
-│       │                   └── MySqlRepositoryImpl.java
-│       ├── resources/
-│       │   └── movies_db.sql
-│       └── webapp/
-│           └── WEB-INF/
-│               └── index.jsp
-├── .gitignore
-├── backend.iml
-├── pom.xml
-└── README.md
-```
-
-## ⚙️ Requirements
+## ⚙️equirements
 
 - [x] JDK 17
 - [x] Apache Tomcat 9.0
 - [x] MySQL
 - [x] Maven
 
-## 🛠️ Environment Configuration
-Database
+## 🛠️nvironment Configuration
+
+**Database**
 
 1. Create a database in MySQL (Copy the one from the resource folder `movies_db.sql`)
 2. Clone repository (It is recommended to do a FORK)
-``` bash
-git clone https://github.com/tu-usuario/movie-hub.git
+
+``` bsh
+git clone https://github.com/username/cinema-management-system.git
 ```
    
 3. Configure Apache Tomcat to deploy the application.
@@ -80,7 +41,8 @@ Verify that the root path (index.jsp) is working properly.
 > 1. Select: Body
 > 2. Select: Rows
 > 3. Paste a JSON on rows:
-```
+
+```json
 {
   "id":1,
   "title":"The Lord of the Rings",
