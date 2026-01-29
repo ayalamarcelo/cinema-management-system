@@ -1,35 +1,40 @@
-## Requirements
+# Cinema Mgmt System 🎬
+**Backend Developer Project | Java API REST**
 
-- [x] JDK 17
-- [x] Apache Tomcat 9.0
-- [x] MySQL
-- [x] Maven
+### 📝 Description
+This project is a cinema management system designed to manage a movie catalog. It was developed with a strong focus on the **Backend**, implementing an architecture that separates business logic from data persistence, enabling full CRUD operations.
 
-## Environment Configuration
+### 🛠️ Tech Stack
+* **Language:** Java
+* **Dependency Manager:** Maven
+* **Persistence:** MySQL with JDBC
+* **Application Server:** Apache Tomcat 9.0
+* **Data Processing:** Jackson (JSON)
+* **Frontend:** HTML, CSS, JS
+* **Testing:** Postman
+* **Methodology:** SCRUM (Team of 4 people)
 
-**Database**
+### 🚀 Key Features
+* **REST API**: Full implementation of endpoints for movie management
+* [cite_start]**Integration & Testing**: End-to-end data flow testing and endpoint validation using Postman
+* [cite_start]**Asynchronous Logic**: Dynamic response handling using JSON format
 
-1. Create a database in MySQL (Copy the one from the resource folder `movies_db.sql`)
-2. Clone repository (It is recommended to do a FORK)
+### ⚙️ Environment Setup
+#### Prerequisites
+* JDK 17
+* Apache Tomcat 9.0 (Configured on port `8090`)
+* MySQL
 
-``` bsh
-git clone https://github.com/username/cinema-management-system.git
-```
-   
-3. Configure Apache Tomcat to deploy the application.
+#### Installation
+1. **Database**: Import the `movies_db.sql` file located in the `/resource` folder.
+2. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/your-username/cinema-management-system.git](https://github.com/your-username/cinema-management-system.git)
+   ```
 
-> [!NOTE]
-> Change port in Apache Tomcat
+### Credentials: Update your database user and password in DatabaseConnection.java
 
-```dtd
-Connector port=”8090″ protocol=”HTTP/1.1″ connectionTimeout=”20000″ redirectPort=”8443″
-```
-
-## Use
-Use your IDE (like IntelliJ IDEA or Eclipse) or Tomcat Manager to deploy the project.
-Verify that the root path (index.jsp) is working properly.
-
-*Endpoints*:
+*Api Endpoints*:
 
 * GET /movies/{id}: Gets a movie by ID.
 * POST /movies Create a new movie.
@@ -50,8 +55,3 @@ Verify that the root path (index.jsp) is working properly.
   "genre": "Fantasy"
 }
 ```
-
-### Final Notes
-
-- Make sure your MySQL and Tomcat services are up and properly configured.
-- Check and update database credentials in DatabaseConnection.java if needed.
