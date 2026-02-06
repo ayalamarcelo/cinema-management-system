@@ -16,8 +16,8 @@ This project is a cinema management system designed to manage a movie catalog. I
 
 ### 🚀 Key Features
 * **REST API**: Full implementation of endpoints for movie management
-* [cite_start]**Integration & Testing**: End-to-end data flow testing and endpoint validation using Postman
-* [cite_start]**Asynchronous Logic**: Dynamic response handling using JSON format
+* **Integration & Testing**: End-to-end data flow testing and endpoint validation using Postman
+* **Asynchronous Logic**: Dynamic response handling using JSON format
 
 ### ⚙️ Environment Setup
 #### Prerequisites
